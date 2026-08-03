@@ -171,8 +171,8 @@ export type GalleryImage = {
 };
 
 export const galleryImages: GalleryImage[] = [
-  { src: 'https://images.pexels.com/photos/5078745/pexels-photo-5078745.jpeg?auto=compress&cs=tinysrgb&w=900&h=1200&fit=crop', alt: 'Sunrise over a rural farm with orchards', category: 'Farm Views', span: true },
-  { src: 'https://images.pexels.com/photos/28903096/pexels-photo-28903096.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop', alt: 'Mango orchard under a clear blue sky', category: 'Mango Orchard' },
+  { src: '/farm-entrance-1.jpg', alt: 'Entrance to YAR Farms', category: 'Farm Views', span: true },
+  { src: '/farm-entrance-2.jpg', alt: 'Wide view of the farm entrance', category: 'Farm Views' },
   { src: 'https://images.pexels.com/photos/9799037/pexels-photo-9799037.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop', alt: 'Freshly harvested groundnuts with roots', category: 'Groundnut Fields' },
   { src: 'https://images.pexels.com/photos/36623833/pexels-photo-36623833.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop', alt: 'Sheep grazing in a flower-filled field', category: 'Animals' },
   { src: 'https://images.pexels.com/photos/24896227/pexels-photo-24896227.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop', alt: 'Family bonding with a goat on the farm', category: 'Visitors' },
