@@ -35,10 +35,10 @@ export default function Footer() {
           {/* Brand + newsletter */}
           <div className="lg:col-span-5">
             <a href="#home" className="flex items-center gap-2.5">
-              <span className="grid h-11 w-11 place-items-center rounded-2xl bg-gradient-to-br from-leaf to-cream/30 text-white shadow-glow">
-                <Leaf className="h-6 w-6" />
-              </span>
-              <span className="font-display text-2xl font-700 tracking-tight text-cream">YAR <span className="font-300">Farms</span></span>
+              <div className="overflow-hidden rounded-xl bg-cream p-1.5 shadow-glow">
+                <img src="/logo.png" alt="YAR Farms Logo" className="h-12 w-auto object-contain mix-blend-multiply" />
+              </div>
+              <span className="font-display text-2xl font-700 tracking-tight text-cream"><span className="font-300">Farms</span></span>
             </a>
             <p className="mt-5 max-w-sm text-cream/75">
               A premium eco-friendly farm resort where families reconnect with nature, fresh food, and the simple joy of rural life.

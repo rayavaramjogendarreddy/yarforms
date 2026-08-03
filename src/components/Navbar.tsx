@@ -44,14 +44,12 @@ export default function Navbar() {
       >
         <nav className="container-x flex items-center justify-between px-5 py-3.5 sm:px-8 lg:px-12">
           <a href="#home" className="flex items-center gap-2.5">
-            <span className="grid h-10 w-10 place-items-center rounded-2xl bg-gradient-to-br from-forest to-leaf text-white shadow-glow">
-              <Leaf className="h-5 w-5" />
-            </span>
+            <img src="/logo.png" alt="YAR Farms Logo" className="h-14 w-auto drop-shadow-md" />
             <span className={[
               'font-display text-xl font-700 tracking-tight transition-colors',
               scrolled ? 'text-forest dark:text-cream' : 'text-white',
             ].join(' ')}>
-              YAR <span className="font-300">Farms</span>
+              <span className="font-300">Farms</span>
             </span>
           </a>
 
