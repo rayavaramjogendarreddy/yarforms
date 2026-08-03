@@ -8,7 +8,6 @@ const quickLinks = [
   { label: 'Our Farm', href: '#our-farm' },
   { label: 'Gallery', href: '#gallery' },
   { label: 'Book a Visit', href: '#booking' },
-  { label: 'FAQ', href: '#faq' },
   { label: 'Contact', href: '#contact' },
 ];
 

@@ -10,8 +10,7 @@ import OurFarm from '@/components/OurFarm';
 import WhyChoose from '@/components/WhyChoose';
 import Gallery from '@/components/Gallery';
 import Booking from '@/components/Booking';
-import Testimonials from '@/components/Testimonials';
-import FAQ from '@/components/FAQ';
+
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 
@@ -32,8 +31,6 @@ export default function App() {
         <WhyChoose />
         <Gallery />
         <Booking />
-        <Testimonials />
-        <FAQ />
         <Contact />
       </main>
       <Footer />

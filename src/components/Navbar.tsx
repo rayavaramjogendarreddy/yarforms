@@ -9,7 +9,6 @@ const links = [
   { label: 'Our Farm', href: '#our-farm' },
   { label: 'Gallery', href: '#gallery' },
   { label: 'Visit', href: '#booking' },
-  { label: 'FAQ', href: '#faq' },
   { label: 'Contact', href: '#contact' },
 ];
 
