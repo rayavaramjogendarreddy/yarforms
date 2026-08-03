@@ -67,10 +67,11 @@ export default function Contact() {
         <div className="reveal mt-12 overflow-hidden rounded-[2rem] shadow-soft">
           <iframe
             title="YAR Farms location map"
-            src="https://www.google.com/maps?q=11.0168,76.9558&z=12&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d610.5777952347222!2d78.89627276717289!3d14.100305359189772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb31d3918d562c5%3A0x9931d3cd86d64f77!2sThe%20Joy%20Life%20Cafe!5e1!3m2!1sen!2sin!4v1785782290401!5m2!1sen!2sin"
             className="h-[400px] w-full border-0"
+            allowFullScreen
             loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
+            referrerPolicy="strict-origin-when-cross-origin"
           />
         </div>
 
