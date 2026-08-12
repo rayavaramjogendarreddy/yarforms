@@ -67,7 +67,7 @@ export default function Contact() {
         <div className="reveal mt-12 overflow-hidden rounded-[2rem] shadow-soft">
           <iframe
             title="YAR Farms location map"
-            src=<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.6388026792806!2d78.89449230988868!3d14.100189189076751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb31d00238492a5%3A0xa1ae9a8e1da16c0f!2sYAR%20FARMS!5e1!3m2!1sen!2sin!4v1786557935361!5m2!1sen!2sin"
+            src=<iframe <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.6388026792806!2d78.89449230988868!3d14.100189189076751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb31d00238492a5%3A0xa1ae9a8e1da16c0f!2sYAR%20FARMS!5e1!3m2!1sen!2sin!4v1786558417799!5m2!1sen!2sin"
             className="h-[400px] w-full border-0"
             allowFullScreen
             loading="lazy"
