@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from 'react';
-import { Leaf, Instagram, MessageCircle, Mail, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { Instagram, MessageCircle, Mail, ArrowRight, CheckCircle2 } from 'lucide-react';
 
 const quickLinks = [
   { label: 'Home', href: '#home' },

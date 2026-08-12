@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Menu, X, Leaf, Moon, Sun } from 'lucide-react';
+import { Menu, X, Moon, Sun } from 'lucide-react';
 import { useScrollPosition } from '@/hooks/useScrollReveal';
 
 const links = [
