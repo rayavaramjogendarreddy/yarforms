@@ -80,9 +80,8 @@ export const seasonalProduce: Produce[] = [
     name: 'Mangoes',
     description:
       'Sweet, sun-ripened mangoes from our heritage orchard — hand-picked at peak season for unmatched flavour and aroma.',
-    image:
-      'https://images.pexels.com/photos/20568790/pexels-photo-20568790.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
-    alt: 'Green mangoes hanging on a tree branch',
+    image: '/mango-tree-1.jpg',
+    alt: 'Mango tree loaded with fresh green mangoes at YAR Farms',
     badge: 'Seasonal · Apr–Jul',
     badgeTone: 'seasonal',
   },
@@ -173,6 +172,7 @@ export type GalleryImage = {
 export const galleryImages: GalleryImage[] = [
   { src: '/farm-entrance-1.jpeg', alt: 'Entrance to YAR Farms', category: 'Farm Views', span: true },
   { src: '/farm-entrance-2.jpeg', alt: 'Wide view of the farm entrance', category: 'Farm Views' },
+  { src: '/mango-tree-1.jpg', alt: 'Mango tree loaded with fresh green mangoes', category: 'Mango Orchard' },
   { src: '/sheep-farm-1.jpg', alt: 'Sheep flock at YAR Farms elevated shelter', category: 'Animals & Livestock', span: true },
   { src: 'https://images.pexels.com/photos/9799037/pexels-photo-9799037.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop', alt: 'Freshly harvested groundnuts with roots', category: 'Groundnut Fields' },
   { src: 'https://images.pexels.com/photos/36623833/pexels-photo-36623833.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop', alt: 'Sheep grazing in a flower-filled field', category: 'Animals' },
