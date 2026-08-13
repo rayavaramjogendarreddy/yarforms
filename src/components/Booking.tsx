@@ -12,7 +12,7 @@ type FormState = {
 
 type Errors = Partial<Record<keyof FormState, string>>;
 
-const WHATSAPP_NUMBER = '919676752084'; // +91 96767 52084
+const WHATSAPP_NUMBER = '9676752084'; // +91 96767 52084
 
 const initial: FormState = { name: '', phone: '', email: '', date: '', visitors: '1', message: '' };
 
