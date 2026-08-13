@@ -4,15 +4,15 @@ const cards = [
   {
     icon: MapPin,
     label: 'Visit Us',
-    value: 'YAR Farms, Green Valley Road, Countryside, TN 600001',
-    href: 'https://maps.google.com/?q=YAR+Farms+Green+Valley+Road',
+    value: 'Madhiredi gari palli, Verraballi mandal, Kadapa District, Andhra Pradesh, 516268',
+    href: 'https://maps.google.com/?q=Madhiredi+gari+palli,+Verraballi+mandal,+Kadapa+District,+Andhra+Pradesh,+516268',
     accent: 'from-forest to-leaf',
   },
   {
     icon: Phone,
     label: 'Call Us',
-    value: '+91 98765 43210',
-    href: 'tel:+919876543210',
+    value: '+91 96767 52084 / +91 95507 02121',
+    href: 'tel:+919676752084',
     accent: 'from-leaf to-forest',
   },
   {
@@ -77,7 +77,7 @@ export default function Contact() {
 
         <div className="mt-8 flex justify-center">
           <a
-            href="https://wa.me/919876543210"
+            href="https://wa.me/919676752084"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-7 py-3.5 font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl"

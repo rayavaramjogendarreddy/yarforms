@@ -12,7 +12,7 @@ type FormState = {
 
 type Errors = Partial<Record<keyof FormState, string>>;
 
-const WHATSAPP_NUMBER = '919876543210'; // +91 98765 43210
+const WHATSAPP_NUMBER = '919676752084'; // +91 96767 52084
 
 const initial: FormState = { name: '', phone: '', email: '', date: '', visitors: '1', message: '' };
 
@@ -111,7 +111,7 @@ export default function Booking() {
                   <label htmlFor="bk-phone" className="mb-1.5 block text-sm font-600 text-forest dark:text-cream">Phone Number</label>
                   <div className="relative">
                     <Phone className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-earth/50" />
-                    <input id="bk-phone" type="tel" value={form.phone} onChange={(e) => update('phone', e.target.value)} placeholder="+91 98765 43210" className={fieldClass('phone')} />
+                    <input id="bk-phone" type="tel" value={form.phone} onChange={(e) => update('phone', e.target.value)} placeholder="+91 96767 52084" className={fieldClass('phone')} />
                   </div>
                   {errors.phone && <p className="mt-1 text-xs text-red-500">{errors.phone}</p>}
                 </div>

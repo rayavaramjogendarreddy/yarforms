@@ -173,6 +173,7 @@ export type GalleryImage = {
 export const galleryImages: GalleryImage[] = [
   { src: '/farm-entrance-1.jpeg', alt: 'Entrance to YAR Farms', category: 'Farm Views', span: true },
   { src: '/farm-entrance-2.jpeg', alt: 'Wide view of the farm entrance', category: 'Farm Views' },
+  { src: '/sheep-farm-1.jpg', alt: 'Sheep flock at YAR Farms elevated shelter', category: 'Animals & Livestock', span: true },
   { src: 'https://images.pexels.com/photos/9799037/pexels-photo-9799037.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop', alt: 'Freshly harvested groundnuts with roots', category: 'Groundnut Fields' },
   { src: 'https://images.pexels.com/photos/36623833/pexels-photo-36623833.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop', alt: 'Sheep grazing in a flower-filled field', category: 'Animals' },
   { src: 'https://images.pexels.com/photos/24896227/pexels-photo-24896227.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop', alt: 'Family bonding with a goat on the farm', category: 'Visitors' },

@@ -83,16 +83,16 @@ export default function Footer() {
           <div className="lg:col-span-4">
             <h3 className="font-display text-sm font-700 uppercase tracking-widest text-cream/80">Reach Us</h3>
             <ul className="mt-5 space-y-2.5 text-sm text-cream/75">
-              <li>YAR Farms, Green Valley Road, Countryside, TN 600001</li>
-              <li><a href="tel:+919876543210" className="transition-colors hover:text-leaf">+91 98765 43210</a></li>
-              <li><a href="mailto:hello@yarfarms.com" className="transition-colors hover:text-leaf">hello@yarfarms.com</a></li>
+              <li>Madhiredi gari palli, Verraballi mandal, Kadapa District, Andhra Pradesh, 516268</li>
+              <li><a href="tel:+919676752084" className="transition-colors hover:text-leaf">+91 96767 52084</a> / <a href="tel:+919550702121" className="transition-colors hover:text-leaf">+91 95507 02121</a></li>
+              <li><a href="mailto:reddyharsha095@gmail.com" className="transition-colors hover:text-leaf">reddyharsha095@gmail.com</a></li>
               <li>Open daily · 8:00 AM – 6:00 PM</li>
             </ul>
             <div className="mt-6 flex gap-3">
               {[
                 { icon: Instagram, href: 'https://instagram.com/yarfarms', label: 'Instagram' },
-                { icon: MessageCircle, href: 'https://wa.me/919876543210', label: 'WhatsApp' },
-                { icon: Mail, href: 'mailto:hello@yarfarms.com', label: 'Email' },
+                { icon: MessageCircle, href: 'https://wa.me/919676752084', label: 'WhatsApp' },
+                { icon: Mail, href: 'mailto:reddyharsha095@gmail.com', label: 'Email' },
               ].map((s) => (
                 <a
                   key={s.label}
