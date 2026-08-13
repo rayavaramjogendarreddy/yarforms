@@ -104,9 +104,8 @@ export const dailyProduce: Produce[] = [
     name: 'Country Hens',
     description:
       'Free-range country hens raised on natural feed — healthy, active, and a lively part of the farm family.',
-    image:
-      'https://images.pexels.com/photos/32594311/pexels-photo-32594311.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
-    alt: 'Free-range chicken on a sunny meadow',
+    image: '/white-rooster.jpg',
+    alt: 'White country rooster at YAR Farms',
     badge: 'Available Daily',
     badgeTone: 'daily',
   },
@@ -114,10 +113,9 @@ export const dailyProduce: Produce[] = [
     icon: Leaf,
     name: 'Sheep',
     description:
-      'Our gentle flock grazes openly on green pasture, cared for with attention to their health and comfort year-round.',
-    image:
-      'https://images.pexels.com/photos/12714450/pexels-photo-12714450.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
-    alt: 'Sheep grazing in a green pasture',
+      'Our gentle flock grazes openly on green pasture and rests in clean elevated shelters cared for daily.',
+    image: '/sheep-shelter-indoor.jpg',
+    alt: 'Sheep in elevated slatted shelter at YAR Farms',
     badge: 'Available Daily',
     badgeTone: 'daily',
   },
@@ -125,10 +123,9 @@ export const dailyProduce: Produce[] = [
     icon: Wheat,
     name: 'Cows',
     description:
-      'Indigenous breed cows raised in clean, open shelters — the heart of our dairy and a favourite with visiting children.',
-    image:
-      'https://images.pexels.com/photos/33755004/pexels-photo-33755004.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
-    alt: 'Brown cow grazing on lush green grass',
+      'Indigenous breed cows raised with care under shade and open pastures — the heart of our dairy.',
+    image: '/farmer-with-cow.jpg',
+    alt: 'Indigenous white cow with farmer at YAR Farms',
     badge: 'Available Daily',
     badgeTone: 'daily',
   },
@@ -173,8 +170,13 @@ export const galleryImages: GalleryImage[] = [
   { src: '/farm-entrance-1.jpeg', alt: 'Entrance to YAR Farms', category: 'Farm Views', span: true },
   { src: '/farm-entrance-2.jpeg', alt: 'Wide view of the farm entrance', category: 'Farm Views' },
   { src: '/mango-tree-1.jpg', alt: 'Heritage Mango Orchard loaded with fresh fruit', category: 'Mango Orchard' },
+  { src: '/farmer-with-cow.jpg', alt: 'Farmer caring for white calf under mango tree', category: 'Animals & Livestock', span: true },
   { src: '/sheep-farm-1.jpg', alt: 'Sheep flock at YAR Farms elevated shelter', category: 'Animals & Livestock', span: true },
+  { src: '/sheep-shelter-indoor.jpg', alt: 'Sheep inside clean elevated slatted shelter', category: 'Animals & Livestock' },
+  { src: '/white-rooster.jpg', alt: 'Country rooster at the farm yard', category: 'Poultry' },
+  { src: '/turkey-bird.jpg', alt: 'Heritage turkey bird free-ranging on farm', category: 'Poultry' },
   { src: '/farm-crop-rows-1.jpg', alt: 'Lush green cultivated crop rows across the farm', category: 'Crop Fields', span: true },
+  { src: '/farmer-grass-harvest.jpg', alt: 'Fresh green fodder grass harvest by farmer', category: 'Farm Life' },
   { src: '/farm-field-work-1.jpg', alt: 'Daily cultivation work in the crop fields', category: 'Farm Life' },
   { src: '/farm-field-work-2.jpg', alt: 'Natural organic crop care & irrigation', category: 'Farm Life' },
   { src: '/farm-green-fields-1.jpg', alt: 'Healthy fodder crops at YAR Farms', category: 'Green Fields' },
