@@ -172,14 +172,13 @@ export type GalleryImage = {
 export const galleryImages: GalleryImage[] = [
   { src: '/farm-entrance-1.jpeg', alt: 'Entrance to YAR Farms', category: 'Farm Views', span: true },
   { src: '/farm-entrance-2.jpeg', alt: 'Wide view of the farm entrance', category: 'Farm Views' },
-  { src: '/mango-tree-1.jpg', alt: 'Mango tree loaded with fresh green mangoes', category: 'Mango Orchard' },
+  { src: '/mango-tree-1.jpg', alt: 'Heritage Mango Orchard loaded with fresh fruit', category: 'Mango Orchard' },
   { src: '/sheep-farm-1.jpg', alt: 'Sheep flock at YAR Farms elevated shelter', category: 'Animals & Livestock', span: true },
-  { src: 'https://images.pexels.com/photos/9799037/pexels-photo-9799037.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop', alt: 'Freshly harvested groundnuts with roots', category: 'Groundnut Fields' },
-  { src: 'https://images.pexels.com/photos/36623833/pexels-photo-36623833.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop', alt: 'Sheep grazing in a flower-filled field', category: 'Animals' },
-  { src: 'https://images.pexels.com/photos/24896227/pexels-photo-24896227.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop', alt: 'Family bonding with a goat on the farm', category: 'Visitors' },
-  { src: 'https://images.pexels.com/photos/35383652/pexels-photo-35383652.jpeg?auto=compress&cs=tinysrgb&w=900&h=1200&fit=crop', alt: 'Serene green field under a blue sky', category: 'Nature', span: true },
-  { src: 'https://images.pexels.com/photos/27896657/pexels-photo-27896657.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop', alt: 'Brown and white cow grazing in pasture', category: 'Animals' },
-  { src: 'https://images.pexels.com/photos/7782158/pexels-photo-7782158.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop', alt: 'Woman teaching gardening to children', category: 'Visitors' },
+  { src: '/farm-crop-rows-1.jpg', alt: 'Lush green cultivated crop rows across the farm', category: 'Crop Fields', span: true },
+  { src: '/farm-field-work-1.jpg', alt: 'Daily cultivation work in the crop fields', category: 'Farm Life' },
+  { src: '/farm-field-work-2.jpg', alt: 'Natural organic crop care & irrigation', category: 'Farm Life' },
+  { src: '/farm-green-fields-1.jpg', alt: 'Healthy fodder crops at YAR Farms', category: 'Green Fields' },
+  { src: '/farmer-in-field-1.jpg', alt: 'Our dedicated farmer in the lush green fields', category: 'Our Farmers' },
 ];
 
 export type Testimonial = {
