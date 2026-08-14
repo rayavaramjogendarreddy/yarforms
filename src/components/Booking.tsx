@@ -30,7 +30,7 @@ export default function Booking() {
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email.trim())) e.email = 'Enter a valid email address.';
     if (!form.date) e.date = 'Please choose a visit date.';
     const n = Number(form.visitors);
-    if (!n || n < 1 || n > 50) e.visitors = 'Enter 1–50 visitors.';
+    if (!n || n < 1 || n > 100) e.visitors = 'Enter 1–100 visitors.';
     setErrors(e);
     return Object.keys(e).length === 0;
   };
@@ -194,7 +194,7 @@ export default function Booking() {
                   <label htmlFor="bk-visitors" className="mb-1.5 block text-sm font-600 text-forest dark:text-cream">Number of Visitors</label>
                   <div className="relative">
                     <Users className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-earth/50" />
-                    <input id="bk-visitors" type="number" min={1} max={50} value={form.visitors} onChange={(e) => update('visitors', e.target.value)} className={fieldClass('visitors')} />
+                    <input id="bk-visitors" type="number" min={1} max={100} value={form.visitors} onChange={(e) => update('visitors', e.target.value)} className={fieldClass('visitors')} />
                   </div>
                   {errors.visitors && <p className="mt-1 text-xs text-red-500">{errors.visitors}</p>}
                 </div>

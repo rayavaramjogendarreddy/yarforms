@@ -251,8 +251,8 @@ export const faqs: Faq[] = [
 ];
 
 export const stats = [
-  { label: 'Acres of Greenery', value: 120, suffix: '+' },
-  { label: 'Happy Visitors', value: 15000, suffix: '+' },
+  { label: 'Acres of Greenery', value: 3, suffix: '' },
+  { label: 'Happy Visitors', value: 100, suffix: '+' },
   { label: 'Farm Animals', value: 80, suffix: '' },
   { label: 'Years of Farming', value: 25, suffix: '' },
 ];

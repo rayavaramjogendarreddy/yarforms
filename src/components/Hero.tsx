@@ -80,8 +80,8 @@ export default function Hero() {
 
           <dl className="mt-12 flex flex-wrap gap-x-10 gap-y-4">
             {[
-              ['120+', 'Acres of Greenery'],
-              ['15K+', 'Happy Visitors'],
+              ['3', 'Acres of Greenery'],
+              ['100+', 'Happy Visitors'],
               ['25', 'Years of Farming'],
             ].map(([v, l]) => (
               <div key={l}>
