@@ -25,11 +25,11 @@ export default function App() {
       <main>
         <Hero />
         <Marquee />
+        <Gallery />
         <About />
         <Experiences />
         <OurFarm />
         <WhyChoose />
-        <Gallery />
         <Booking />
         <Contact />
       </main>
