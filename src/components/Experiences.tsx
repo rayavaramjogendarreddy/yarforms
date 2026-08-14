@@ -22,8 +22,22 @@ export default function Experiences() {
               className="reveal group card-hover relative overflow-hidden rounded-3xl bg-white shadow-soft dark:bg-[#14281a]/70"
               style={{ transitionDelay: `${i * 90}ms` }}
             >
-              <div className="img-zoom relative h-56 overflow-hidden">
-                <img src={exp.image} alt={exp.alt} loading="lazy" className="h-full w-full object-cover" />
+              <div className="relative h-56 overflow-hidden">
+                {exp.video ? (
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    poster={exp.image}
+                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  >
+                    <source src={exp.video} type="video/mp4" />
+                    <img src={exp.image} alt={exp.alt} className="h-full w-full object-cover" />
+                  </video>
+                ) : (
+                  <img src={exp.image} alt={exp.alt} loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-forest/70 via-forest/10 to-transparent" />
                 <span className="absolute left-4 top-4 grid h-12 w-12 place-items-center rounded-2xl glass text-leaf">
                   <exp.icon className="h-6 w-6" />

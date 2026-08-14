@@ -22,6 +22,7 @@ export type Experience = {
   title: string;
   description: string;
   image: string;
+  video?: string;
   alt: string;
 };
 
@@ -33,6 +34,7 @@ export const experiences: Experience[] = [
       'Get your hands in the soil and learn sustainable, chemical-free farming from our seasoned farmers — from sowing seeds to harvesting fresh produce.',
     image:
       'https://images.pexels.com/photos/4669531/pexels-photo-4669531.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&fit=crop',
+    video: 'https://videos.pexels.com/video-files/3571264/3571264-sd_640_360_30fps.mp4',
     alt: 'Aerial view of a cultivated vegetable field',
   },
   {
@@ -42,6 +44,7 @@ export const experiences: Experience[] = [
       'A leisurely walk through our orchards, fields, and barns with an expert guide who shares the story behind every crop and corner of the farm.',
     image:
       'https://images.pexels.com/photos/5078726/pexels-photo-5078726.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&fit=crop',
+    video: 'https://videos.pexels.com/video-files/2887463/2887463-sd_640_360_24fps.mp4',
     alt: 'Lush green citrus orchard with mountain backdrop',
   },
   {
@@ -51,6 +54,7 @@ export const experiences: Experience[] = [
       'Meet our friendly cows, sheep, and hens. Feed them, learn how they are cared for, and let the little ones make a new farm friend.',
     image:
       'https://images.pexels.com/photos/1430639/pexels-photo-1430639.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&fit=crop',
+    video: 'https://videos.pexels.com/video-files/5078726/5078726-sd_640_360_25fps.mp4',
     alt: 'Child feeding hay to a cow at a barn',
   },
   {
@@ -60,6 +64,7 @@ export const experiences: Experience[] = [
       'Treasure hunts, hay-barn play, nature crafts, and more — designed to give families a joyful, screen-free day surrounded by greenery.',
     image:
       'https://images.pexels.com/photos/9036092/pexels-photo-9036092.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&fit=crop',
+    video: 'https://videos.pexels.com/video-files/856377/856377-sd_640_360_30fps.mp4',
     alt: 'Children playing on a haystack in a field',
   },
 ];
