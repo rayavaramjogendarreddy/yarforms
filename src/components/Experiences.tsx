@@ -15,7 +15,7 @@ export default function Experiences() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-7 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-14 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
           {experiences.map((exp, i) => (
             <article
               key={exp.title}

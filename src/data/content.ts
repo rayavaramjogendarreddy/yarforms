@@ -57,16 +57,6 @@ export const experiences: Experience[] = [
     video: '/feeding.mp4',
     alt: 'Child feeding hay to a cow at a barn',
   },
-  {
-    icon: Users,
-    title: 'Family & Kids Activities',
-    description:
-      'Treasure hunts, hay-barn play, nature crafts, and more — designed to give families a joyful, screen-free day surrounded by greenery.',
-    image:
-      'https://images.pexels.com/photos/9036092/pexels-photo-9036092.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&fit=crop',
-    video: 'https://videos.pexels.com/video-files/856377/856377-sd_640_360_30fps.mp4',
-    alt: 'Children playing on a haystack in a field',
-  },
 ];
 
 export type Produce = {
