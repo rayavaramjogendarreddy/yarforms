@@ -3,7 +3,6 @@ import { Instagram, MessageCircle, Mail, ArrowRight, CheckCircle2 } from 'lucide
 
 const quickLinks = [
   { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about' },
   { label: 'Experiences', href: '#experiences' },
   { label: 'Our Farm', href: '#our-farm' },
   { label: 'Gallery', href: '#gallery' },

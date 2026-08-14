@@ -4,7 +4,6 @@ import ScrollProgress, { BackToTop } from '@/components/ScrollProgress';
 import FloatingLeaves from '@/components/FloatingLeaves';
 import Hero from '@/components/Hero';
 import Marquee from '@/components/Marquee';
-import About from '@/components/About';
 import Experiences from '@/components/Experiences';
 import OurFarm from '@/components/OurFarm';
 import WhyChoose from '@/components/WhyChoose';
@@ -26,7 +25,6 @@ export default function App() {
         <Hero />
         <Marquee />
         <Gallery />
-        <About />
         <Experiences />
         <OurFarm />
         <WhyChoose />
