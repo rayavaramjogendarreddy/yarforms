@@ -24,15 +24,25 @@ export default function Hero() {
     <section id="home" className="relative min-h-[100svh] w-full overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
-        <img
-          src={HERO_IMG}
-          alt="Sunrise over a rural farm with orchards and a farmhouse"
-          fetchPriority="high"
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster={HERO_IMG}
           className="h-full w-full object-cover"
-          style={{ transform: `scale(1.1) translateY(${offset}px)` }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-forest/55 via-forest/35 to-forest/70" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-transparent" />
+          style={{ transform: `scale(1.05) translateY(${offset}px)` }}
+        >
+          <source src="/hero-video.mp4" type="video/mp4" />
+          <source src="https://assets.mixkit.co/videos/preview/mixkit-sun-shining-over-a-green-farm-field-42864-large.mp4" type="video/mp4" />
+          <img
+            src={HERO_IMG}
+            alt="Sunrise over a rural farm with orchards and a farmhouse"
+            className="h-full w-full object-cover"
+          />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-b from-forest/65 via-forest/45 to-forest/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-transparent" />
       </div>
 
       {/* Animated blobs */}
