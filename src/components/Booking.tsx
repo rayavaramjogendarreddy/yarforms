@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from 'react';
-import { CalendarDays, Mail, Phone, User, Users, MessageSquare, CheckCircle2, Send } from 'lucide-react';
+import { CalendarDays, Mail, Phone, User, Users, MessageSquare, CheckCircle2, Send, Loader2 } from 'lucide-react';
 
 type FormState = {
   name: string;
@@ -12,7 +12,8 @@ type FormState = {
 
 type Errors = Partial<Record<keyof FormState, string>>;
 
-const WHATSAPP_NUMBER = '9676752084'; // +91 96767 52084
+const WHATSAPP_NUMBER = '919676752084'; // +91 96767 52084
+const OWNER_EMAIL = 'reddyharsha095@gmail.com';
 
 const initial: FormState = { name: '', phone: '', email: '', date: '', visitors: '1', message: '' };
 
@@ -20,6 +21,7 @@ export default function Booking() {
   const [form, setForm] = useState<FormState>(initial);
   const [errors, setErrors] = useState<Errors>({});
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const validate = (): boolean => {
     const e: Errors = {};
@@ -38,12 +40,66 @@ export default function Booking() {
     if (errors[k]) setErrors((e) => ({ ...e, [k]: undefined }));
   };
 
-  const onSubmit = (ev: FormEvent) => {
+  const triggerMailto = () => {
+    const mailSubject = encodeURIComponent(`New Farm Visit Booking - ${form.name}`);
+    const mailBody = encodeURIComponent(
+      `Hello YAR Farms team!\n\nI would like to book a visit to YAR Farms.\n\n` +
+      `--- Booking Details ---\n` +
+      `Full Name: ${form.name}\n` +
+      `Phone Number: ${form.phone}\n` +
+      `Email Address: ${form.email}\n` +
+      `Visit Date: ${form.date}\n` +
+      `Number of Visitors: ${form.visitors}\n` +
+      `Message: ${form.message.trim() || 'None'}\n\n` +
+      `Sent via YAR Farms Website.`
+    );
+    window.location.href = `mailto:${OWNER_EMAIL}?subject=${mailSubject}&body=${mailBody}`;
+  };
+
+  const onSubmit = async (ev: FormEvent) => {
     ev.preventDefault();
     if (!validate()) return;
-    setSubmitted(true);
-    setForm(initial);
-    setTimeout(() => setSubmitted(false), 6000);
+
+    setLoading(true);
+
+    try {
+      // Send email silently in background to reddyharsha095@gmail.com
+      const res = await fetch(`https://formsubmit.co/ajax/${OWNER_EMAIL}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify({
+          _subject: `New YAR Farms Booking Request: ${form.name}`,
+          _template: 'table',
+          'Visitor Name': form.name,
+          'Phone Number': form.phone,
+          'Email Address': form.email,
+          'Visit Date': form.date,
+          'Number of Visitors': form.visitors,
+          'Message / Note': form.message.trim() || 'None',
+        }),
+      });
+
+      if (res.ok) {
+        setSubmitted(true);
+        setForm(initial);
+        setTimeout(() => setSubmitted(false), 7000);
+      } else {
+        triggerMailto();
+        setSubmitted(true);
+        setForm(initial);
+        setTimeout(() => setSubmitted(false), 7000);
+      }
+    } catch {
+      triggerMailto();
+      setSubmitted(true);
+      setForm(initial);
+      setTimeout(() => setSubmitted(false), 7000);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const waText = encodeURIComponent(
@@ -153,8 +209,16 @@ export default function Booking() {
               </div>
 
               <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-                <button type="submit" className="btn-primary flex-1">
-                  <Send className="h-4 w-4" /> Book Now
+                <button type="submit" disabled={loading} className="btn-primary flex-1 disabled:opacity-75">
+                  {loading ? (
+                    <>
+                      <Loader2 className="h-4 w-4 animate-spin" /> Sending...
+                    </>
+                  ) : (
+                    <>
+                      <Send className="h-4 w-4" /> Book Now
+                    </>
+                  )}
                 </button>
                 <a
                   href={`https://wa.me/${WHATSAPP_NUMBER}?text=${waText}`}
